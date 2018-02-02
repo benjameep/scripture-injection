@@ -6,7 +6,7 @@ It isn't perfect but gets the job done
 
 ## To use
 
-Just go to (here)[#]
+Just go to [here](https://benjameep.github.io/scripture-injection/)
 
 ## To help develop
 
@@ -16,7 +16,7 @@ So you will need to have node on your machine
 
 ##### Clone the repository
 ```
-git clone 
+git clone https://github.com/benjameep/scripture-injection.git
 cd scripture-injection
 ```
 ##### Install dependencies
