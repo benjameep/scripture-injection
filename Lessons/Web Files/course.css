@@ -1,0 +1,276 @@
+/********************************************************
+    The purpose of course.css is to house only the css
+    specific to an individual course. The online.css
+    houses all the default template formatting.
+********************************************************/
+/* DO NOT DELETE OR MODIFY THIS IMPORT */
+@import url("https://content.byui.edu/integ/gen/599082e0-3e89-4fd9-ac69-2615865d63c7/0/online.css");
+
+/* Add Course Specific css Below */
+
+html {
+	background: -webkit-radial-gradient(ellipse, #406986 0%, #16344a 100%) fixed;
+	background: radial-gradient(ellipse, #865f89 0%, #3e2a40 100%) fixed;
+}
+
+h1 {
+	color: #644667;
+}
+
+h2 {
+	color: #5d7037;
+}
+
+h3 {
+	color: #934b45;
+}
+
+h4 {
+	color: #5d7037;
+}
+
+h5 {
+	color: #934b45;
+}
+
+a {
+	color: #934b45;
+	border-bottom: 2px solid #934b45;
+}
+
+a:hover {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+a:visited {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+#footer {
+	color: #e2e2e2;
+	background-color: #543a57;
+}
+
+/********************************************
+    SPLASH PAGE STYLING
+*********************************************/
+
+.splash #article {
+	color: #3e3e3e;
+	background-color: #e0dbcb;
+}
+
+.splash h1 {
+	color: #644667;
+}
+
+.splash h2 {
+	color: #5d7037;
+}
+
+.splash h3 {
+	color: #934b45;
+}
+
+.splash h4 {
+	color: #5d7037;
+}
+
+.splash h5 {
+	color: #934b45;
+}
+
+.splash a {
+    color: #934b45;
+	border-bottom: 2px solid #934b45;
+}
+
+.splash a:hover {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+.splash a:visited {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+.splash #footer {
+	color: #e2e2e2;
+	background-color: #543a57;
+}
+
+/********************************************
+    FEATURES STYLING
+*********************************************/
+
+/* Callout box */
+.callout {
+    color: #62542f;
+    background: #ebe6dc;
+}
+
+/* Drop downs */
+.drop-down {
+    background: #5f3f62;
+}
+
+.drop-down:hover {
+    background: #754e79;
+}
+
+/* Rubric table */
+/* Column headings */
+.rubric tr:first-child th {
+	color: white;
+	background-color: #5f3f62;
+}
+
+/* Row headings */
+.rubric th {
+    color: white;
+    background-color: #805584;
+}
+
+/* Mouseover popups */
+#main .popup {
+    border-bottom: dotted 2px #5f3f62;
+}
+
+#main .popup span {
+    color: #fdfdfd;
+    background: #5f3f62;
+}
+
+#main .popup::after {
+    border-color: #5f3f62 transparent transparent transparent;
+}
+
+/* Checkbox Tool */
+
+.drop-down {
+    min-height: 51px;
+}
+
+.drop-down.check-item {
+    display: inline-block;
+    margin: 10px 0 10px 2.5%;
+    width: calc(95% - 60px);
+}
+
+.check-wrapper {
+    display: none;
+    position: relative;
+    left: -6px;
+    margin: 10px 0;
+    width: 60px;
+    height: 51px;
+    text-align: center;
+    background: #5f3f62;
+    vertical-align: bottom;
+}
+
+.check-wrapper:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: calc(100% - 10px);
+    border-left: 1px solid #a280a5;
+}
+
+.check-wrapper label {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 10px;
+    width: 40px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 11px;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #355c79;
+    border-radius: 5px;
+    background: linear-gradient(#eee3ef, #c0a4c3);
+}
+
+.check-wrapper input:focus ~ label {
+    outline: #7ab1ea solid 2px;
+    outline-offset: 1px;
+}
+
+.check-wrapper input:checked ~ label {
+    color: #fff;
+    background: linear-gradient(#6cb52d, #257208);
+}
+
+.check-wrapper input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -999;
+}
+
+/* Checkbox Tool Message overlay */
+#alertOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#alertBox {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    width: 95%;
+    max-width: 500px;
+    background: #dbdbdb;
+}
+
+#alertBox p:nth-child(1) {
+    margin: 0;
+    padding: 10px;
+}
+
+#alertBox p:nth-child(2) {
+    position: relative;
+    padding: 10px 10px 35px;
+    background: #fff;
+}
+
+#alertBox button {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/* Flat Buttons */
+   
+    .flatButton,
+    a.flatButton,
+    a.flatButton:visited {
+        color: #fff;
+        background: #5d7037;
+        border-color: #293b53;
+        transition: .2s;
+        text-decoration: none;
+        border-bottom: 2px solid #2d361b;
+        margin: 5px 0;
+    }
+   
+    .icon:before {
+        background: #445228;
+    }
+   
+    a.flatButton:hover {
+    
+        opacity: .8;
+        transition: .2s;
+    }
